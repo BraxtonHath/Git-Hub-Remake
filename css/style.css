@@ -1,0 +1,19 @@
+.flex-java-divs{
+  display: flex;
+
+flex-flow: row;wrap
+}
+
+
+#page{
+  flex: 1 1 30%;
+  text-align: right;
+}
+
+#repocontainer{
+  flex: 1 1 70%;
+}
+
+.name{
+  font-size: 27px;
+}
