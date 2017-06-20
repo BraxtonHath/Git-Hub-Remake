@@ -1,13 +1,15 @@
 .flex-java-divs{
   display: flex;
 
-flex-flow: row;wrap
+  flex-flow: row;wrap
 }
 
+.flex-body{
+  padding-top: 20px
+}
 
 #page{
-  flex: 1 1 30%;
-  text-align: right;
+flex: 1 1 10%;
 }
 
 #repocontainer{
@@ -15,5 +17,272 @@ flex-flow: row;wrap
 }
 
 .name{
-  font-size: 27px;
+  font-size: 26px;
+}
+
+.login{
+  font-size: 20px;
+  opacity: .6;
+}
+
+.location{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/*.location::before{
+  background-image: url(octicons-5.0.1/lib/svg/location.svg);
+}*/
+
+.location::before{
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+
+
+.formatedDate{
+  padding-top: 10px;
+}
+
+.formatedDate::before{
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+
+
+.navigation-top{
+  position: ;
+  top: 0;
+  width: 100%;
+  background-color: #24292e;
+  display: flex;
+  flex-flow: row;
+}
+
+.email{
+  text-decoration: none;
+  padding-top: 10px
+}
+
+.email::before{
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+
+.testone{
+  color:white;
+  font-size: 30px;
+  flex: 1 1 20%;
+}
+
+.octicon-mark-github{
+  text-align: right;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.search{
+  background-color: #434649;
+  font-size: 15px;
+  color: lightgray;
+  flex: 1 1 25%;
+  border-color: #24292e;
+  margin: 9px 21px;
+  border-radius: 5px;
+}
+
+.nav{
+  display: flex;
+  flex: 1 1 42%;
+  padding: 0;
+}
+
+.nav-bar{
+  margin-right: 25px;
+  list-style: none;
+}
+
+.end{
+  flex: 1 1 32%;
+  margin: auto;
+}
+
+.nav-A{
+  color:lightgray;
+  text-decoration: none;
+}
+.nav-A:hover{
+  color:lightgray;
+}
+
+.active{
+  color:lightgray;
+}
+
+
+.flex-body{
+  display: flex;
+}
+
+.ayyye{
+  flex: 1 1 12%;
+}
+
+.repo-item{
+  font-size: 25px;
+  text-decoration: none;
+}
+
+/*.repo-lang{
+  margin: 0px 26px;
+}*/
+li{
+  list-style: none;
+}
+.javascript::before{
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+
+.css::before{
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: purple;
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+
+.html::before{
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+
+.tab-selector{
+  display: flex;
+  flex-direction: row;
+}
+
+.tab-selector>li{
+  flex: 1 1 20%;
+  font-size: 20px;
+}
+
+.bar-two{
+  display: flex;
+  margin-left: 40px;
+  padding-bottom: 20px;
+  border-bottom-style: groove;
+  border-bottom-width: thin;
+  border-top-style: groove;
+  border-top-width: thin;
+  padding-top: 20px;
+}
+.three-buttons{
+  display: flex;
+  flex: 1 1 50%;
+}
+.two-buttons{
+  display: flex;
+  flex: 1 1 50%;
+}
+
+.opacity{
+  opacity: .6;
+}
+
+.button-All{
+  display: flex;
+}
+
+.button-one{
+  border: none;
+  border-radius: .25px;
+}
+
+.tridown{
+  padding-top: 10px;
+}
+
+.searchDiv{
+  flex: 1 1 50%;
+}
+
+.searchInput{
+  min-height: 42px;
+  padding: 6px 8px;
+font-size: 14px;
+border: 1px solid #d1d5da;
+border-radius: 3px;
+    width: 90%;;
+}
+
+.green-button{
+  color: white;
+  background-color: #28a745;
+  border: none;
+  padding: 2px 22px;
+}
+
+.repo-lang{
+  border-bottom-style: groove;
+border-bottom-width: thin;
+padding-bottom: 15px;
+padding-top: 15px;
+font-size: 12px;
+}
+
+.bio{
+  opacity: .6;
+  border-bottom-style: groove;
+border-bottom-width: thin;
+padding-bottom: 8px;
+padding-top: 25px;
+}
+.new{
+  flex: 1 1 50%
+}
+
+.tab-selector>li::after{
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  border-radius: 50%;
+  margin-bottom: -3px;
+  margin-left: 10px;
 }

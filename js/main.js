@@ -1,20 +1,26 @@
 (function () {
   'use strict';
 
+  var headers = {};
+  try {
+      headers['Authorization'] = 'token ' + GIT_TOKEN;
+    } catch (e) {
+      //ignore error
+    }
   //use github api token for development purpose
   //will not be present in producion
-  var headers = {};
-  if (GITHUB_TOKEN) {
-      //set the AJAX header to send the token
-    headers['Authorization'] = 'token ' + GITHUB_TOKEN;
-  }
+  // var headers = {};
+  // if (GITHUB_TOKEN) {
+  //     //set the AJAX header to send the token
+  //   headers['Authorization'] = 'token ' + GITHUB_TOKEN;
+  // }
 
   // fetch(url, {headers: headers}).then(function(){
   //
   // });
 
   var myURL = 'https://api.github.com/users/BraxtonHath';
-  var repoURL = 'https://api.github.com/users/BraxtonHath/repos?sort=updated'
+  var repoURL = 'https://api.github.com/users/BraxtonHath/repos?sort=updated';
   var page = document.getElementById('page');
   var info = [];
 
@@ -102,8 +108,9 @@
      });
    });
    function displayRepo(repo){
+     console.log(repo);
      var repoList =document.getElementById('UL');
-     var repoItem = document.createElement('li');
+     var repoItem = document.createElement('p');
      var formatedDate = moment(repo.updated_at).fromNow();
 
      if(!repo.language){
@@ -111,12 +118,10 @@
      }
 
      repoItem.innerHTML =`
-      <a href="${repo.url}">
-        <span class="repo-item">
+      <a class="repo-item" href="${repo.html_url}">
           ${repo.name}
-          </span>
       </a>
-      <li class='repo-lang'>
+      <li class='${repo.language.toLowerCase()} repo-lang'>
         <span class="${repo.language} language">${repo.language}</span> ${formatedDate}
       </li>
     `;

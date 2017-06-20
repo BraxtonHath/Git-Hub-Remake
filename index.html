@@ -1,26 +1,99 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <title></title>
-  </head>
-  <body>
-    <div class="flex-java-divs">
-    <div class="uselss-flex"></div>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title></title>
+</head>
+<body>
+  <section class="navigation-top">
+
+    <span class="octicon octicon-mark-github testone" height='20' width='20'></span>
+    <input class='search' type="text" name="" value="search Github">
+    <ul class="nav">
+      <li class="nav-bar">
+        <a class="nav-A"href="">Pull Request</a>
+      </li>
+      <li class="nav-bar">
+        <a class="nav-A"href="">Issues</a>
+      </li>
+      <li class="nav-bar">
+        <a class="nav-A" href="">Marketplace</a>
+      </li>
+      <li class="nav-bar">
+        <a class="nav-A" href="">Gist</a>
+      </li>
+    </ul>
+
+
+    <nav class="end">
+      <span class="octicon octicon-plus testone" height="20" width="20"></span>
+      <span class="dropdown-caret"></span>
+      <img alt="" class="" src="https://avatars3.githubusercontent.com/u/28835648?v=3&amp;s=40" height="20" width="20">
+      <span class="dropdown-caret"></span>
+    </nav>
+
+  </section>
+  <section class="flex-body">
+    <div class="ayyye"></div>
+
     <div id='page'></div>
 
     <div id='repocontainer'>
+      <section>
+        <ul class="tab-selector">
+          <li>Overview</li>
+          <li>Repositories</li>
+          <li>Stars</li>
+          <li>Followers</li>
+          <li>Following</li>
+        </ul>
+        <div class="bar-two">
+          <div class="searchDiv">
+            <input type="search" class="searchInput" placeholder="Search repositories…" autocomplete="off" aria-label="Search repositories…" value="">
+          </div>
+          <div class="three-buttons">
+            <div class="two-buttons">
+              <div class="button-one">
+                <button class="button-All" type="button" name="All">
+                  <p class="opacity">type:</p>
+                  <p><strong>All</strong></p>
+                  <span class="octicon octicon-triangle-down tridown" height="" width=""></span>
+                </button>
+              </div>
+              <div class="button-one">
+                <button class="button-All" type="button" name="All">
+                  <p class="opacity">Language:</p>
+                  <p><strong>All</strong></p>
+                  <span class="octicon octicon-triangle-down tridown" height="" width=""></span>
+                </button>
+              </div>
+            </div>
+            <div class="button-one new">
+              <button class="button-All green-button" type="button" name="All">
+                <span class="octicon octicon-repo tridown book" height="" width=""></span>
+                <p><strong>New</strong></p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <ul id='UL'>
       </ul>
     </div>
 
-    <div class="useless-flex"></div>
-  </div>
+    <div class="ayyye">
+
+    </div>
 
 
-    <script src="js/token.js"></script>
-    <script src='js/moment.js'></script>
-    <script src="js/main.js"></script>
-  </body>
+  </section>
+
+
+  <script src="js/token.js"></script>
+  <script src='js/moment.js'></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
